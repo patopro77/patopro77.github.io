@@ -1,79 +1,31 @@
 <!DOCTYPE html>
 
 <head>
-    <title>patopro77's Website</title>
+    <title>patopro77.github.io</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("header").load("Templates/Header.html");
+            $("footer").load("Templates/Footer.html");
+        });
+    </script>
 </head>
 
-<h1 style="line-height: 10px;">patopro77's Website</h1>
+<img class="Background" src="Assets/Background.png">
 
-<hr>
-<h1 style="color: rgb(0, 141, 224); margin-left: 25px;">Latest news:</h1>
+<div class="Content">
+    <header></header>
 
-<!--CONTENT HERE-->
+    <main>
+        <p style="font-size: 40px; margin-left: 25px;">Welcome!</p>
+        <p style="font-size: 30px; margin-left: 25px;">Pages v v v</p>
 
-<div class="Post">
-    <h2>Updates on the page</h2>
-    <hr style="margin-bottom: 18px;">
+        <a href="Latest.html" style="font-size: 25px; margin-left: 25px;">Latest posts/news</a>
+        <br>
+        <a href="Aboutme.html" style="font-size: 25px; margin-left: 25px;">About me</a>
+    </main>
 
-    <p>Added a devforum like style and new post boxes</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, ea sed tenetur, quod inventore beatae
-        aliquam, sunt tempore laboriosam repudiandae quae cupiditate dignissimos dolor perspiciatis ab maxime
-        consequatur ipsum ad!</p>
-</div>
-
-<div class="Post">
-    <h2>Video test</h2>
-    <hr style="margin-bottom: 18px;">
-
-    <p><video controls src="Assets/video.mp4"></video></p>
-</div>
-
-<div class="Post">
-    <h2>Audio Test</h2>
-    <hr style="margin-bottom: 18px;">
-
-    <p><audio controls src="Assets/Lullaby Of The Leaves (Instrumental).mp3"></audio></p>
-</div>
-
-<div class="Post">
-    <h2>Embed Test</h2>
-    <hr style="margin-bottom: 18px;">
-
-    <p>
-    <div class="tenor-gif-embed" data-postid="3219711934296360561" data-share-method="host" data-aspect-ratio="1"
-        data-width="30%"><a
-            href="https://tenor.com/view/cat-ai-pufferfish-cat-puffer-fish-ai-pufferfish-cat-ai-ai-gif-3219711934296360561">Cat
-            Ai Pufferfish Cat GIF</a>from <a href="https://tenor.com/search/cat+ai-gifs">Cat Ai GIFs</a></div>
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-    </p>
-
-    <p>
-    <div class="tenor-gif-embed" data-postid="6482731715770817978" data-share-method="host" data-aspect-ratio="0.742972"
-        data-width="30%"><a
-            href="https://tenor.com/view/cat-british-shorthair-ai-slap-tik-tok-gif-6482731715770817978">Cat
-            British Shorthair GIF</a>from <a href="https://tenor.com/search/cat-gifs">Cat GIFs</a></div>
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-    </p>
-</div>
-
-<!--CONTENT HERE-->
-
-<hr>
-<div style="font-size: 20px">
-    <table>
-        <tr align="left">
-            <th width="200">Links</th>
-            <th width="200">Contact</th>
-        </tr>
-
-        <tr>
-            <td><a href="https://www.roblox.com/users/277425586/profile" target="_blank">ROBLOX profile</a></td>
-            <td>Discord: @patopro77</td>
-        </tr>
-
-        <tr>
-            <td><a href="https://github.com/patopro77" target="_blank">GitHub profile</a></td>
-        </tr>
-    </table>
+    <footer></footer>
 </div>

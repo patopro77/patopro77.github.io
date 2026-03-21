@@ -6,19 +6,96 @@
 }
 
 body {
-    background-color: #111217;
+    background-color: #24292e;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Background {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    display: block;
+    object-fit: cover;
+    z-index: -10;
+
+    opacity: 0.3;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #24292e;
+    width: 100%;
+    height: 50px;
+    align-content: center;
+}
+
+main {
+    flex: 1;
+}
+
+
+footer {
+    background-color: #24292e;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 50px;
+
+    position: relative;
+    clear: both;
+    bottom: 0;
+}
+
+.PagesBar {
+    background-color: #353b3f;
+    width: 100%;
+    height: 40px;
+
+    align-content: center;
+}
+
+.PagesBar button {
+    appearance: none;
+    width: 150px;
+    margin-left: 10px;
+    background-color: rgb(0, 141, 224);
+}
+
+.Post {
+    background-color: #353b3f;
+    border-radius: 20px;
+    overflow: hidden;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 h1 {
     font-size: 25px;
     font-family: "BuilderSans", sans-serif;
-    color: #cbcbcb;
+    color: #e1e4e8;
 }
 
 h2 {
     font-size: 25px;
     font-family: "BuilderSans", sans-serif;
-    color: #cbcbcb;
+    color: #e1e4e8;
 
     margin-top: 15px;
     margin-bottom: 10px;
@@ -27,23 +104,16 @@ h2 {
 }
 
 p {
-    font-size: 18px;
     font-family: "BuilderSans", sans-serif;
+    font-size: 18px;
     line-height: 18px;
-    color: #cbcbcb;
+    color: #e1e4e8;
 
     margin-left: 15px;
     margin-right: 15px;
 }
 
-.Post {
-    outline: 3px solid rgba(255, 255, 255, 0.217);
-    overflow: hidden;
-
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 25px;
-}
+/*---------------------------------------------------------------------------------------*/
 
 th {
     font-size: 18px;
@@ -68,5 +138,7 @@ a {
 }
 
 hr {
-    border-color: #000000;
+    height: 2px;
+    border: none;
+    background-color: rgb(107, 122, 131);
 }
