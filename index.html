@@ -3,25 +3,120 @@
 <head>
     <title>patopro77.github.io</title>
     <link rel="stylesheet" href="style.css">
+    <script src="Startup.js"></script>
+    <script src="Menu.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(function () {
-            $("header").load("Templates/Header.html");
-            $("footer").load("Templates/Footer.html");
-        });
-    </script>
+    <style>
+        .StartupStatic {
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            height: 100vh;
+            pointer-events: none;
+            animation: fadeIn 2s forwards;
+            image-rendering: pixelated;
+        }
+
+        .BackgroundStatic {
+            position: fixed;
+            z-index: -98;
+            opacity: 0.05;
+            width: 100%;
+            height: 100vh;
+            pointer-events: none;
+            image-rendering: pixelated;
+        }
+
+        .Gradient {
+            z-index: -99;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            pointer-events: none;
+
+            top: 0px;
+            right: 0px;
+            background: linear-gradient(to bottom, #2f4e39da 0%, #3758375d 25%, #37583700 50%, #3758375d 75%, #2f4e39da 100%);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 
-<img class="Background" src="Assets/Background.png">
+
+<body>
+    <img class="StartupStatic" src="Assets/StartupStatic.gif"></img>
+    <img class="BackgroundStatic" src="Assets/BackgroundStatic.gif"></img>
+    <div class="Gradient"></div>
+    <div id="loader" style="position: fixed; z-index: -100; width: 100%; height: 100vh;">
+        <script src="NotMine/balatroShader.js"></script>
+        <script>
+            var color1 = "#fffff"
+            const fx = new BalatroShader({
+                container: "#loader", speed: 1, contrast: 2, spinAmount: 1, pixelSizeFac: 200, spinEase: 0.25
+            });
+        </script>
+    </div>
+
+    <div class="TopText">
+        <div class="ScrollingText">
+            PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|
+        </div>
+        <div class="Line"></div>
+    </div>
+    
+    <div class="SideMenu">
+        <div class="Title">*Menu</div>
+
+        <button class="WelcomeButton" onclick="OpenPage('Welcome!')">Welcome!</button>
+        <button class="LatestNewsButton" onclick="OpenPage('Latest News')">Latest News</button>
+        <button class="AboutMeButton" onclick="OpenPage('About Me')">About Me</button>
+
+        <button class="MusicButton">
+            <img src="Assets/Unmuted.png" style="image-rendering: pixelated;"></img>
+        </button>
+    </div>
+
+    <div id="Content">
+        <div class="Title">*Welcome!</div>
+
+        <iframe class="Page" id="Welcome!" src="Welcome!.html" frameborder="0"></iframe>
+        <iframe class="Page" id="Latest News" src="Latest News.html" frameborder="0" style="display: none;"></iframe>
+        <iframe class="Page" id="About Me" src="About Me.html" frameborder="0" style="display: none;"></iframe>
+    </div>
+</body>
+
+<!--
+
+<header style="display: flex; justify-content: right;">
+    <p>PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|PATOPRO77.GITHUB.IO|
+    </p>
+</header>
+
+<div style="position: absolute; height: 3px; width: 100%; top: 32px; background-color: rgb(189, 189, 189);"></div>
+
+
+
 
 <div class="Content">
-    <header></header>
+
 
     <main>
-        <p style="font-size: 40px; margin-left: 25px;">Welcome!</p>
-        <p style="font-size: 30px; margin-left: 25px;">Pages v v v</p>
 
+
+        <p class="Text" style="font-size: 40px; margin: 0; margin-left: 5px;">PAGE: Welcome!</p>
+        <p class="Text" style="font-size: 30px; margin: 0; text-align: center;">Click on the buttons to view different
+            categories.</p>
+
+        <button></button>
         <a href="Latest.html" style="font-size: 25px; margin-left: 25px;">Latest posts/news</a>
         <br>
         <a href="Aboutme.html" style="font-size: 25px; margin-left: 25px;">About me</a>
@@ -29,3 +124,5 @@
 
     <footer></footer>
 </div>
+
+-->
